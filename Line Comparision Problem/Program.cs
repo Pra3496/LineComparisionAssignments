@@ -33,19 +33,24 @@ namespace Line_Comparision_Problem
             var Y4 = Convert.ToDouble(Console.ReadLine());
             Console.Write("\n\n");
 
-            LineEquationUC2 le = new LineEquationUC2();
+            LineEquationUC3 le = new LineEquationUC3();
 
-            bool chk = le.EquationCmp(X1,X2,X3,X4,Y1,Y2,Y3,Y4);
+            short chk = le.EquationCmp(X1,X2,X3,X4,Y1,Y2,Y3,Y4);
 
-            if (chk == true)
+            if (chk == 1)
             {
                 Console.WriteLine("\n\n\tLines are equal\n");
             }
+            else if (chk == 2)
+            {
+                Console.WriteLine("\n\n\tLenght of line1 is greater than length of line2.\n\n");
+            }
             else
             {
-                Console.WriteLine("\n\n\tLines are not equal\n");
+                Console.WriteLine("\n\n\tLength of line1 is smaller than length of line2.\n\n");
             }
-
+           
+           
 
 
         }
