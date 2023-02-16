@@ -9,6 +9,8 @@ namespace Line_Comparision_Problem
             
             Console.WriteLine("\n\nWelcome! to Line Comparison Pragram\n");
 
+            Console.WriteLine("---------------------UC-3--------------------");
+
             Console.Write("\nFirst Line\n");
             Console.Write("\nPlease enter X1 coordinates : ");
             var X1 = Convert.ToDouble(Console.ReadLine());
@@ -49,8 +51,11 @@ namespace Line_Comparision_Problem
             {
                 Console.WriteLine("\n\n\tLength of line1 is smaller than length of line2.\n\n");
             }
-           
-           
+
+            Console.WriteLine("---------------------UC-4--------------------");
+
+            LineEquationUC4 line= new LineEquationUC4();
+            line.Compare();
 
 
         }
